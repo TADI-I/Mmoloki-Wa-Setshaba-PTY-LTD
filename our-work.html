@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MWS Productions — Sound. Light. AV Excellence.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">
+      <img src="logo.png" alt="MWS Productions">
+      <div class="brand-text">SOUND · LIGHT<br><b>AV EXCELLENCE</b></div>
+    </div>
+    <div class="navlinks">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="why-us.html#why">Why Us</a>
+      <a href="#work">Our Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Get a Quote</a>
+  <button class="burger" id="burger" aria-label="Open menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html#about" onclick="toggleMenu()">About</a>
+    <a href="index.html#services" onclick="toggleMenu()">Services</a>
+    <a href="why-us.html#why" onclick="toggleMenu()">Why Us</a>
+    <a href="#work" onclick="toggleMenu()">Our Work</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="#contact" class="nav-cta" onclick="toggleMenu()">Get a Quote</a>
+  </div>
+</header>
+
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Our Recent Work</div>
+      <h2>Trusted across JTG &amp; the Northern Cape</h2>
+      <p>We've serviced an endless list of clients — from small businesses to large corporations — with high-end event experiences.</p>
+    </div>
+
+    <div class="work-gallery">
+      <figure onclick="openLightbox('work1.jpg')"><img src="work1.jpg" alt="MWS Productions event work 1"><figcaption>Production 01</figcaption></figure>
+      <figure onclick="openLightbox('work2.jpg')"><img src="work2.jpg" alt="MWS Productions event work 2"><figcaption>Production 02</figcaption></figure>
+      <figure onclick="openLightbox('work3.jpg')"><img src="work3.jpg" alt="MWS Productions event work 3"><figcaption>Production 03</figcaption></figure>
+      <figure onclick="openLightbox('work4.jpg')"><img src="work4.jpg" alt="MWS Productions event work 4"><figcaption>Production 04</figcaption></figure>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
+      <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+      <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <div class="work-videos">
+      <div class="video-card" onclick="playVideo(this)">
+        <video preload="metadata" playsinline>
+          <source src="VIDEO1.mp4" type="video/mp4">
+        </video>
+        <div class="vc-overlay">
+          <div class="vc-play">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#16120a"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <div class="vc-label">Clip 01</div>
+      </div>
+      <div class="video-card" onclick="playVideo(this)">
+        <video preload="metadata" playsinline>
+          <source src="VIDEO2.mp4" type="video/mp4">
+        </video>
+        <div class="vc-overlay">
+          <div class="vc-play">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#16120a"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <div class="vc-label">Clip 02</div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Client</th><th>Project</th><th style="text-align:right;">Date</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>01</td><td>Tshipi — Year End Function</td><td>06 Dec 2024</td></tr>
+        <tr><td>02</td><td>AND 310 — Golf Day</td><td>25 Apr 2025</td></tr>
+        <tr><td>03</td><td>SIOC — Roadshow</td><td>26–28 May 2025</td></tr>
+        <tr><td>04</td><td>Shaoshao Productions — Career Exhibition</td><td>24–25 Jun 2025</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="eyebrow">Get In Touch</div>
+        <h2>Let's plan your<br>next production</h2>
+        <p>From an intimate unveiling to a multi-day festival, our team is ready to design, build and run the sound, light and AV behind it.</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="lab">Director</div>
+          <div class="val">Mmoloki Setshaba Mogodi</div>
+        </div>
+        <div class="contact-row">
+          <div class="lab">Phone</div>
+          <div class="val"><a href="tel:+27723779358">+27 (0) 72 377 9358</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="lab">Email</div>
+          <div class="val"><a href="mailto:mmolokiwasetshaba@gmail.com">mmolokiwasetshaba@gmail.com</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="lab">Address</div>
+          <div class="val">10047 Manyeding, Kuruman, 8460</div>
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/share/1BKwjpVTyV/" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+          <a href="https://www.tiktok.com/@setshabamogodi?_r=1&_t=ZS-96qgybyhoZ6" aria-label="TikTok" target="_blank" rel="noopener">t</a>
+        </div>
+        <a href="mailto:mmolokiwasetshaba@gmail.com" class="btn-primary">Request A Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="brand-text">© 2026 MWS Productions — a division of Mmoloki Wa Setshaba (Pty) Ltd</div>
+    <span class="mono">SOUND · LIGHT · AV EXCELLENCE</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
