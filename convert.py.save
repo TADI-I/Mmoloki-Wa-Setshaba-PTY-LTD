@@ -1,7 +1,0 @@
-from markitdown import MarkItDown
-
-markitdown = MarkItDown()
-result = markitdown.convert("Mmoloki Wa Setshaba.pdf")
-
-with open("
-
