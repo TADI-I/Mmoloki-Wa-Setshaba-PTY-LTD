@@ -107,7 +107,7 @@
       radial-gradient(ellipse 900px 500px at 80% 0%, rgba(197,80,26,0.10), transparent 60%),
       radial-gradient(ellipse 700px 500px at 10% 100%, rgba(217,143,31,0.08), transparent 60%),
       linear-gradient(rgba(249,245,236,0.35), rgba(249,245,236,0.9)),
-      url('hero-background.jpg');
+      url('/images/hero-background.jpg');
     background-size:cover;
     background-position:center;
     overflow:hidden;
